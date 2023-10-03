@@ -10,6 +10,8 @@ const ctx = document.getElementById('myChart');
         borderWidth: 1
       }]
     },
+    maintainAspectRatio: false,
+    responsive: true,
     options: {
       plugins: {
         title: {
@@ -44,7 +46,7 @@ const ctx = document.getElementById('myChart');
             color: "black",
             font: {
               family: "'Montserrat'", // Your font family
-              size: 14,
+             size: 14,
             },
           },
         },
@@ -69,15 +71,15 @@ const ctx = document.getElementById('myChart');
           },
         },
       },
-      animations: {
-        backgroundColor: {
-          duration: 2500,
-          easing: "linear",
-          to: "blue",
-          from: "#28B7FC",
-          type: "color",
-          loop: true,
-        },
-      },
+      // animations: {
+      //   backgroundColor: {
+      //     duration: 2500,
+      //     easing: "linear",
+      //     to: "blue",
+      //     from: "#28B7FC",
+      //     type: "color",
+      //     loop: true,
+      //   },
+      // },
     },
   });
