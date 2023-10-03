@@ -7,10 +7,10 @@ const ctx = document.getElementById('myChart');
       datasets: [{
         label: 'Celcius',
         data: [34.5, 33.3, 34.3, 34, 35,34.5, 34.3, 33.3, 34, 35],
-        borderWidth: 1
+        borderWidth: 0
       }]
     },
-    maintainAspectRatio: false,
+    maintainAspectRatio: true,
     responsive: true,
     options: {
       plugins: {
@@ -71,15 +71,15 @@ const ctx = document.getElementById('myChart');
           },
         },
       },
-      // animations: {
-      //   backgroundColor: {
-      //     duration: 2500,
-      //     easing: "linear",
-      //     to: "blue",
-      //     from: "#28B7FC",
-      //     type: "color",
-      //     loop: true,
-      //   },
-      // },
+      animations: {
+        backgroundColor: {
+          duration: 2500,
+          easing: "linear",
+          to: "orange",
+          from: "#e37e42",
+          type: "color",
+          loop: true,
+        },
+      },
     },
   });
