@@ -1,0 +1,53 @@
+.banner {
+    padding: 0;
+    .image {
+        width: 100%;
+        height: 100vh;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .termo {
+        position: absolute;
+        bottom: -12px;
+        left: 23%;
+        width: 240px;
+        height: 70vh;
+        @media screen and (max-width:766px) {
+            left: 5%;
+            bottom: -8vh;
+            width: 155px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    &_title {
+        position: absolute;
+        bottom: 10%;
+        right: 5%;
+        color: white;
+        text-align: right;
+        @media screen and (max-width:766px) {
+            bottom: 75%;
+            text-align: left;
+            right: initial;
+            left: 8%;
+
+        }
+        h2 {
+            font-size: 3.3rem;
+            line-height: 3rem;
+            font-weight: bold;
+            text-shadow: 3px 3px black;
+            @media screen and (max-width:766px) {
+                font-size: 2.2rem;
+                line-height: 1.8rem;
+            }
+        }
+    }
+}
