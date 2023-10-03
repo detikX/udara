@@ -2,14 +2,28 @@
     background: $oren;
     color: #efefef;
     .img {
-        position: absolute;
+        position: sticky;
         bottom: 0;
-        left: 0;
         right: 0;
+        width: 70%;
+        z-index: 2;
+        height: auto;
+        transform: translate(50%, 0);
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
+        }
+    }
+    .wrap-detikx {
+        position: relative;
+        z-index: 4;
+        .helo {
+            background: rgba($color: $oren, $alpha: .7);
+            margin-bottom: 40vh;
+        }
+        .no {
+            margin-bottom: 0;
         }
     }
 }
