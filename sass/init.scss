@@ -91,25 +91,9 @@ section {
         margin: 0 auto;
         display: block;
     }
-
-    .data {
-        width: 80%;
-        display: inline-block;
-    }
-    .line-right {
-        background: #656565;
-        height: 2px;
-        display: inline-block;
-        vertical-align: top;
-        margin-top: 8px;
-        width: 72px;
-        margin-right: 16px;
-        @media screen and (max-width:766px) {
-            margin-right: 4px;
-            width: 32px;
-            
-        }
-    }
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+   
 }
 
 .intros {
