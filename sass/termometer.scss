@@ -1,6 +1,6 @@
 .termo {
 
-
+z-index: 30;
 
 #wrapper {
 	margin: auto;
@@ -30,11 +30,11 @@ $TM-backgroundColor: darken($TM-mainTint, 2%);
 $TM-borderSize: 9px;
 $TM-borderColor: darken($TM-mainTint, 8%);
 $TM-width: 25px;
-$TM-height: 240px;
+$TM-height: 300px;
 $TM-bulbSize: $TM-width * 2;
 $TM-radius: 20px;
 $TM-graduationsStyle: 2px solid rgba(0, 0, 0, 0.5);
-$TM-bulbColor: #3dcadf;
+$TM-bulbColor: #3ddfaf;
 $TM-mercuryColor : linear-gradient(#f17a65, $TM-bulbColor) no-repeat bottom;
 
 // Tooltip
