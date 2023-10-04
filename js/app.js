@@ -1,5 +1,8 @@
 AOS.init();
 
+$('span').addClass('shine');
+$('.cloud').addClass('fly');
+
 const units = {
     Celcius: "°C",
     Fahrenheit: "°F"
