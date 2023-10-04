@@ -6,6 +6,9 @@ position: relative;
 height: 100%;
 font-family: 'Montserrat';
 overflow-x: clip;
+h2, h3 {
+    font-family: 'Prompt';
+}
 }
 
 .foot {
@@ -19,6 +22,8 @@ overflow-x: clip;
         bottom: 0;
     }
 }
+
+
 
 .firstletter {
     &::first-letter {

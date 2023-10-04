@@ -32,6 +32,10 @@ new Chart(ctx, {
           bottom: 30,
         },
       },
+
+      customCanvasBackgroundColor: {
+        color: '#eddcc3',
+      }
     },
     scales: {
       x: {
