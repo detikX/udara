@@ -7,7 +7,9 @@ new Chart(ctx, {
     datasets: [{
       label: 'Celcius',
       data: [34.5, 33.3, 34.3, 34, 35, 34.5, 34.3, 33.3, 34, 35],
-      borderWidth: 0
+      borderWidth: 0,
+      backgroundColor: "#f97432",
+
     }]
   },
   options: {
