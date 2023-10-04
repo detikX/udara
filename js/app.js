@@ -71,4 +71,4 @@ function timer() {
 setTimeout(() => {
     clearInterval(counter)
 
-}, 11000);
+}, 18000);
