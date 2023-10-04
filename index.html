@@ -1,61 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="sass/bootstrap.min.css">
-    <link rel="stylesheet" href="sass/aos.css">
-    <link rel="stylesheet" href="sass/font-awesome.css">
-    <link rel="stylesheet" href="sass/style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="sass/bootstrap.min.css">
+        <link rel="stylesheet" href="sass/aos.css">
+        <link rel="stylesheet" href="sass/font-awesome.css">
+        <link rel="stylesheet" href="sass/style.css">
+    </head>
+    <body>
 
-    <main>
-        <section class="banner">
-            <div class="image">
-                <img src="img/banner.jpeg" alt="Banner Suhu udara" title="Banner Suhu udara" loading="lazy">
-            </div>
-            <div class="termo">
-                <img src="img/termo.png" alt="">
-            </div>
-            <div class="banner_title">
-                <h2>Melindungi Diri</h2>
-                <h2>dari Panas Ekstrem</h2>
-            </div>
-        </section>
+        <main>
+            <section class="banner">
+                <div class="image">
+                    <img src="img/banner.jpeg" alt="Banner Suhu udara"
+                        title="Banner Suhu udara" loading="lazy">
+                </div>
+                <div class="termo">
+                    <!-- <img src="img/termo.png" alt=""> -->
+                    <div id="wrapper">
+                        <div id="termometer">
+                            <div id="temperature" style="height:0"
+                                data-value="0°C"></div>
+                            <div id="graduations"></div>
+                        </div>
 
-        <section class="opening">
-            <div class="container">
-                <div class="wrap-detikx">
-                    <div class="helo">
-                        <p class="firstletter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, cupiditate vel omnis consequuntur iusto fugiat dignissimos nemo magnam nesciunt, explicabo culpa doloribus quod magni dolores autem eum eius, saepe rerum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto officiis eius necessitatibus harum culpa tenetur eaque esse repudiandae ut libero, unde dignissimos itaque corporis officia sapiente magni nam dolores consectetur!</p>
+                        <div id="playground">
+                            <div id="range">
+                                <input id="minTemp" type="text" value="-20">
+                                <input type="range" min="-20" max="50"
+                                    value="42">
+                                <input id="maxTemp" type="text" value="50">
+                            </div>
+                            <p id="unit">Celcius C°</p>
+                        </div>
+
+                        <p id="info">Click on the values to change them!</p>
                     </div>
-                    <div class="no">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem perferendis ratione aspernatur repellendus officia asperiores dolorem reiciendis, nostrum natus maxime ipsam quae voluptates suscipit hic tempora id dolore aut error? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam unde velit quidem, tempora molestiae error inventore voluptatibus, deleniti excepturi dicta aut blanditiis vel? Dolores aperiam alias magni tempore officia animi!</p>
-                    </div>
+                </div>
+                <div class="banner_title">
+                    <h2>Melindungi Diri</h2>
+                    <h2>dari Panas Ekstrem</h2>
+                </div>
+            </section>
 
-                    
+            <section class="opening">
+                <div class="container">
+                    <div class="wrap-detikx">
+                        <div class="helo">
+                            <p class="firstletter">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Incidunt,
+                                cupiditate vel omnis consequuntur iusto fugiat
+                                dignissimos nemo magnam nesciunt, explicabo
+                                culpa doloribus quod magni dolores autem eum
+                                eius, saepe rerum! Lorem ipsum dolor sit amet,
+                                consectetur adipisicing elit. Architecto
+                                officiis eius necessitatibus harum culpa tenetur
+                                eaque esse repudiandae ut libero, unde
+                                dignissimos itaque corporis officia sapiente
+                                magni nam dolores consectetur!</p>
+                        </div>
+                        <div class="no">
+                            <p>Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Voluptatem perferendis ratione
+                                aspernatur repellendus officia asperiores
+                                dolorem reiciendis, nostrum natus maxime ipsam
+                                quae voluptates suscipit hic tempora id dolore
+                                aut error? Lorem, ipsum dolor sit amet
+                                consectetur adipisicing elit. Nam unde velit
+                                quidem, tempora molestiae error inventore
+                                voluptatibus, deleniti excepturi dicta aut
+                                blanditiis vel? Dolores aperiam alias magni
+                                tempore officia animi!</p>
+                        </div>
+
+                    </div>
+                    <div class="img">
+                        <img src="img/nahan-panas.png" alt>
+                    </div>
                 </div>
-                <div class="img">
-                    <img src="img/nahan-panas.png" alt="">
+            </section>
+            <section class="maps">
+                <div class="container">
+                    <iframe
+                        src="https://spartan.bmkg.go.id/wp-content/plugins/geo-data/dist/?"
+                        frameborder="0"></iframe>
                 </div>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <div class="wrap-detikx">
-                    <canvas id="myChart"></canvas>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="wrap-detikx">
+                        <canvas id="myChart"></canvas>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </main>
-    
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="js/chart.js"></script>
-</body>
+            </section>
+        </main>
+
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="js/chart.js"></script>
+        <script src="js/app.js"></script>
+    </body>
 </html>
