@@ -50,3 +50,25 @@ function setTemperature() {
 range.addEventListener("input", setTemperature);
 setTimeout(setTemperature, 1000);
 
+var count = 33;
+var counterIncrement = +1;
+var counter = setInterval(timer, 1000);
+
+function timer() {
+    count = count + counterIncrement;
+    if (count == 33 || count == 38) {
+        counterIncrement = -counterIncrement;
+    }
+    console.log(count);
+    $("#temperature").attr('data-value', count)
+    $("#data-ter").val(count)
+    setTemperature()
+}
+
+// var refreshIntervalId = setInterval(fname, 10000);
+
+// /* later */
+setTimeout(() => {
+    clearInterval(counter)
+
+}, 11000);
