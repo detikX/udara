@@ -1,3 +1,5 @@
+AOS.init();
+
 const units = {
     Celcius: "°C",
     Fahrenheit: "°F"
