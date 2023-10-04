@@ -52,6 +52,7 @@ new Chart(ctx, {
         },
       },
       y: {
+        min: 20,
         title: {
           display: true,
           color: "black",
@@ -65,7 +66,6 @@ new Chart(ctx, {
         },
         ticks: {
           color: "black",
-          beginAtZero: false,
           font: {
             family: "'Montserrat'", // Your font family
             size: 14,

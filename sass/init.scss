@@ -8,6 +8,17 @@ font-family: 'Prompt';
 overflow-x: clip;
 }
 
+.foot {
+    @media screen and (max-width:766px) {
+        
+        background: #ccc;
+        height: 59px;
+        width: 100%;
+        position: fixed;
+        z-index: 99;
+        bottom: 0;
+    }
+}
 
 .firstletter {
     &::first-letter {
