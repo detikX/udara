@@ -1,0 +1,18 @@
+.grafik {
+    .ilustrasi {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 20%;
+        height: auto;
+        @media screen and (max-width:766px) {
+            bottom: 60px;
+            width: 60%;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+}

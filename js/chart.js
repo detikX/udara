@@ -19,7 +19,7 @@ new Chart(ctx, {
     plugins: {
       title: {
         display: true,
-        text: "Rata-Rata Suhu Udara",
+        text: "Rata-Rata Suhu Udara Tahun 2023",
         color: "black",
         font: {
           family: "'Montserrat'", // Your font family

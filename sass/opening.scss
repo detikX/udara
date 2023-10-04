@@ -5,7 +5,7 @@
         position: sticky;
         bottom: 0;
         right: 0;
-        width: 70%;
+        width: 50%;
         z-index: 2;
         height: auto;
         transform: translate(50%, 0);
@@ -24,11 +24,12 @@
         position: relative;
         z-index: 4;
         .helo {
-            background: rgba($color: $oren, $alpha: .7);
+            background: rgba($color: $oren, $alpha: .8);
             margin-bottom: 40vh;
         }
         .no {
             margin-bottom: 0;
+            background: rgba($color: $oren, $alpha: .8);
         }
     }
 }
