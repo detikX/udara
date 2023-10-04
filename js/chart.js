@@ -13,7 +13,7 @@ new Chart(ctx, {
   options: {
     responsive: true,
     maintainAspectRatio: false,
-    aspectRatio: 1 / 2,
+    aspectRatio: 1 / 1.5,
     plugins: {
       title: {
         display: true,
