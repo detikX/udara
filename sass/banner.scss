@@ -88,6 +88,17 @@
           
         }
       }
+
+      @keyframes awan1 {
+        0%, 100% {
+          left: 10%;
+          
+        }
+        50% {
+          left: 5%;
+          
+        }
+      }
     .awan {
         position: absolute;
         top: 45%;
@@ -95,6 +106,10 @@
         width: 150px;
         height: auto;
         opacity: .3;
+        &.one {
+            left: 5%;
+            animation: awan1 6s linear infinite;
+        }
         &.dua {
             left: initial;
             animation: awan2 5s linear infinite;
