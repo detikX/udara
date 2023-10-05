@@ -175,7 +175,8 @@
             line-height: 4.8rem;
             letter-spacing: 2px;
             font-family: 'getronde';
-            color: #4ec19c;//#ed702b;
+            // color: #4ec19c;//#ed702b;
+            color: #ed7a6c;
             // background: -webkit-linear-gradient(#eee, #333);
             // -webkit-background-clip: text;
             // -webkit-text-fill-color: transparent;
@@ -186,6 +187,7 @@
                 text-shadow: 2px 2px #000;
                 font-weight: normal;
                 line-height: 2.2rem;
+                letter-spacing: 0;
             }
         }
     }
