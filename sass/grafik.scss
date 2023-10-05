@@ -2,13 +2,14 @@
     background: #eddcc3;
     .ilustrasi {
         position: absolute;
-        bottom: 0;
-        right: 0;
+        bottom: 5%;
+        right: 5%;
         width: 20%;
         height: auto;
         @media screen and (max-width:766px) {
             bottom: 60px;
             width: 50%;
+            right: 0;
         }
         img {
             width: 100%;

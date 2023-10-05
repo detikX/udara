@@ -29,13 +29,14 @@ $TM-mainTint: #3d3d44;
 $TM-backgroundColor: darken($TM-mainTint, 2%);
 $TM-borderSize: 8px;
 $TM-borderColor: darken($TM-mainTint, 8%);
-$TM-width: 25px;
+$TM-width: 35px;
 $TM-height: 300px;
 $TM-bulbSize: $TM-width * 2;
 $TM-radius: 20px;
 $TM-graduationsStyle: 2px solid rgba(0, 0, 0, 0.5);
 $TM-bulbColor: #3ddfaf;
-$TM-mercuryColor : linear-gradient(#f17a65, $TM-bulbColor) no-repeat bottom;
+// $TM-bulbColor: #ff9977;
+$TM-mercuryColor : linear-gradient(#f17a65 50%, $TM-bulbColor) no-repeat bottom;
 
 // Tooltip
 
@@ -161,7 +162,9 @@ $TM-tooltipArrowHeight: 2.2; // Higher numbers produce smaller height
 	
 	#range {
 		display: flex;
-			
+		@media screen and (max-width:766px) {
+			opacity: 0;
+		}
 		input[type="text"] {
 			width: 2.2em;
 			background: transparent;
@@ -186,6 +189,9 @@ $TM-tooltipArrowHeight: 2.2; // Higher numbers produce smaller height
 		width: 100%;
 		margin: 0;
 		text-align: center;
+		@media screen and (max-width:766px) {
+			opacity: 0;
+		}
 		
 		&:hover { cursor: pointer; }
 	}
