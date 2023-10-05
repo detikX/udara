@@ -36,6 +36,38 @@
             object-fit: contain;
         }
     }
+
+    @keyframes panaz {
+        0%, 100% {
+          bottom: 24%;
+          
+        }
+        50% {
+          bottom: 28%;
+          
+        }
+      }
+    &_huff {
+        position: absolute;
+        right: 3%;
+        // animation: panaz 3s linear infinite;
+        bottom: 3%;
+        width: 30%;
+        height: auto;
+        z-index: 2;
+        
+        @media screen and (max-width:766px) {
+            width: 25%;
+            bottom: 24%;
+            z-index: 70;
+            right: 24%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
     @keyframes awan3 {
         0%, 100% {
           top: 20%;
@@ -43,6 +75,17 @@
         }
         50% {
           top: 23%;
+          
+        }
+      }
+
+      @keyframes awan2 {
+        0%, 100% {
+          right: 10%;
+          
+        }
+        50% {
+          right: 5%;
           
         }
       }
@@ -55,6 +98,7 @@
         opacity: .3;
         &.dua {
             left: initial;
+            animation: awan2 5s linear infinite;
             right: 10%;
             top: 40%;
             width: 80px;
@@ -67,7 +111,7 @@
         }
         &.tiga {
             left: 40%;
-            animation: awan3 3s linear infinite;
+            animation: awan3 6s linear infinite;
             top: 20%;
             width: 120px;
         }
@@ -133,6 +177,9 @@
             letter-spacing: 2px;
             font-family: 'getronde';
             color: #4ec19c;//#ed702b;
+            // background: -webkit-linear-gradient(#eee, #333);
+            // -webkit-background-clip: text;
+            // -webkit-text-fill-color: transparent;
             font-weight: bold;
             text-shadow: 4px 4px #000;
             @media screen and (max-width:766px) {
