@@ -13,6 +13,17 @@
         height: 20vh;
         background: linear-gradient(to bottom, #e5bc4e, transparent);
     }
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 8vh;
+        z-index: 2;
+        background: linear-gradient(to top, $kuning-opening, transparent);
+    }
     
     .img {
         position: sticky;
