@@ -1,15 +1,27 @@
 .opening {
-    background: $oren;
+    background: $kuning-opening;
     color: #efefef;
+    padding: 0;
+
+    &::before {
+        position: absolute;
+        top: -10px;
+        content: "";
+        right: 0;
+        left: 0;
+        z-index: 99;
+        height: 20vh;
+        background: linear-gradient(to bottom, #e5bc4e, transparent);
+    }
     
     .img {
         position: sticky;
-        bottom: 0;
-        right: 0;
-        width: 50%;
+        /* bottom: 0; */
+        /* right: 0; */
+        width: 100%;
+        inset: 0;
         z-index: 2;
-        height: auto;
-        transform: translate(50%, 0);
+        height: 100vh;
         @media screen and (max-width:766px) {
             width: 100%;
             transform: initial;
@@ -18,19 +30,23 @@
         img {
             width: 100%;
             height: 100%;
-            object-fit: contain;
+            object-fit: cover;
         }
     }
     .wrap-detikx {
         position: relative;
         z-index: 4;
+        top: -50vh;
+        // padding: 32px 0 0;
         .helo {
-            background: rgba($color: $oren, $alpha: .8);
+            background: rgba($color: $oren, $alpha: .9);
             margin-bottom: 40vh;
+            padding: 8px;
         }
         .no {
             margin-bottom: 0;
-            background: rgba($color: $oren, $alpha: .8);
+            padding: 8px;
+            background: rgba($color: $oren, $alpha: .9);
         }
     }
 }

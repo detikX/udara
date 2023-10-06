@@ -1,0 +1,12 @@
+.teaser {
+    background: $kuning-opening;
+    min-height: auto;
+    font-family: 'Young Serif';
+    text-align: center;
+    font-size: 1.5rem;
+    @media screen and (max-width:766px) {
+        font-size: 1.2rem;
+        
+    }
+    color: #795f00;
+}
