@@ -3,14 +3,21 @@ const ctx = document.getElementById('myChart');
 new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober'],
-    datasets: [{
-      label: 'Celcius',
-      data: [34.5, 33.3, 34.3, 34, 35, 34.5, 34.3, 33.3, 34, 35],
-      borderWidth: 0,
-      backgroundColor: "#f97432",
-
-    }]
+    labels: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September'],
+    datasets: [
+      {
+        label: 'Tahun 2023',
+        data: [26.5, 26.4, 26.7, 27.1, 27.4, 27.0, 26.7, 26.7, 27.0],
+        borderWidth: 0,
+        backgroundColor: "#f97432",
+      },
+      {
+        label: 'Tahun 2020',
+        data: [26.4, 26.6, 26.6, 26.9, 27.0, 26.5, 26.1, 26.2, 26.6],
+        borderWidth: 0,
+        backgroundColor: "#333", //#513600
+      }
+    ]
   },
   options: {
     responsive: true,
@@ -79,15 +86,15 @@ new Chart(ctx, {
         },
       },
     },
-    animations: {
-      backgroundColor: {
-        duration: 2500,
-        easing: "linear",
-        to: "orange",
-        from: "#e37e42",
-        type: "color",
-        loop: true,
-      },
-    },
+    // animations: {
+    //   backgroundColor: {
+    //     duration: 2500,
+    //     easing: "linear",
+    //     to: "orange",
+    //     from: "#e37e42",
+    //     type: "color",
+    //     loop: true,
+    //   },
+    // },
   },
 });

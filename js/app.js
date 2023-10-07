@@ -55,13 +55,13 @@ function setTemperature() {
 range.addEventListener("input", setTemperature);
 setTimeout(setTemperature, 1000);
 
-var count = 33;
+var count = 24;
 var counterIncrement = +1;
 var counter = setInterval(timer, 1000);
 
 function timer() {
     count = count + counterIncrement;
-    if (count == 33 || count == 38) {
+    if (count == 24 || count == 27) {
         counterIncrement = -counterIncrement;
     }
     console.log(count);
@@ -76,4 +76,4 @@ function timer() {
 setTimeout(() => {
     clearInterval(counter)
 
-}, 19000);
+}, 8000);
