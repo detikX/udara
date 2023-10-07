@@ -6,6 +6,7 @@
 }
 .banner {
     padding: 0;
+    // background: linear-gradient(to top, #ff9f27, #9c6725);
     &_orang {
         position: absolute;
         right: 3%;
@@ -155,6 +156,10 @@
     .image {
         width: 100%;
         height: 100vh;
+        @media screen and (max-width:766px) {
+            // background: ;
+            height: 85vh;
+        }
         img {
             width: 100%;
             height: 100%;
