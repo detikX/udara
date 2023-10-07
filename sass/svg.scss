@@ -1,0 +1,41 @@
+.svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: none;
+    transform: translate(-50%,-50%);
+    svg {
+        width: 80%;
+        height: 80%;
+        position: absolute;
+        right: 0;
+      }
+      
+      path {
+        stroke-dasharray: 800;
+        stroke-dashoffset: 800;
+        animation: dash 8s ease-in forwards infinite;
+        
+        @for $i from 1 through 6 {
+          &:nth-child(#{$i}) {
+            animation-delay: random(2) + ($i - 1) * 6 + 3s;
+          }
+        }
+      }
+      
+      
+      @keyframes dash {
+        0% {
+          stroke-dashoffset: 800;
+        }
+        10% {
+          stroke-dasharray: 400;
+          stroke-dashoffset: 0;
+        }
+        20%, 100% {
+          stroke-dasharray: 800;
+          stroke-dashoffset: -800;
+        }
+      }
+      
+}
