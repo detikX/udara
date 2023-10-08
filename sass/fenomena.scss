@@ -1,5 +1,12 @@
 .fenomena {
     background: $kuning-opening;
+    
+    @media screen and (max-width:766px) {
+      padding-bottom: 32px; 
+    }
+    // p {
+    //   backdrop-filter: blur(5px);
+    // }
     .bg {
         position: absolute;
         right: 0;
@@ -8,6 +15,7 @@
         height: auto;
         @media screen and (max-width:766px) {
             bottom: 60px;
+            width: 50%;
         }
         img {
             width: 100%;
