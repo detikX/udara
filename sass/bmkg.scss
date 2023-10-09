@@ -1,20 +1,30 @@
 .bmkg {
-    background: $kuning-opening;
-    .kot {
-        position: absolute;
+    // background: $kuning-opening;
+    background: url(../img/plus.png);
+    background-size: 20px 20px;
+    background-repeat: repeat;
+    // .kot {
+    //     position: absolute;
+    //     inset: 0;
+    //     img {
+    //         width: 100%;
+    //         height: 100%;
+    //         object-fit: cover;
+    //     }
+    //     &::before {
+    //         position: absolute;
+    //         z-index: 1;
+    //         content: "";
+    //         inset: 0;
+    //         background: linear-gradient(to top, $kuning-opening, rgba($kuning-opening,.6) 50%, $kuning-opening);
+    //     }
+    // }
+
+    &::before {
+        content: "";
+        background: linear-gradient(to top, #E5BC4D, rgba(229, 188, 78,.95),#e5bc4e);
         inset: 0;
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        &::before {
-            position: absolute;
-            z-index: 1;
-            content: "";
-            inset: 0;
-            background: linear-gradient(to top, $kuning-opening, rgba($kuning-opening,.6) 50%, $kuning-opening);
-        }
+        position: absolute;
     }
     .img {
         width: 100%;
