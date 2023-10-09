@@ -3,6 +3,10 @@
     min-height: auto;
     font-family: 'Young Serif';
     text-align: center;
+    @media screen and (max-width:766px) {
+        padding: 0;
+        
+    }
     .wrap-detikx {
         @media screen and (max-width:766px) {
             width: 95%;
