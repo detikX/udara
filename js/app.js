@@ -77,3 +77,8 @@ setTimeout(() => {
     clearInterval(counter)
 
 }, 10000);
+
+$('.maps iframe').hide()
+setTimeout(() => {
+    $('.maps iframe').show()
+}, 2500);
