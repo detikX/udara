@@ -85,7 +85,7 @@ function timer() {
 setTimeout(() => {
     clearInterval(counter)
 
-}, 10000);
+}, 11000);
 
 $('.maps iframe').hide()
 setTimeout(() => {
