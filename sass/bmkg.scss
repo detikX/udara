@@ -6,14 +6,14 @@
         img {
             width: 100%;
             height: 100%;
-            object-fit: contain;
+            object-fit: cover;
         }
         &::before {
             position: absolute;
             z-index: 1;
             content: "";
             inset: 0;
-            background: linear-gradient(to top, $kuning-opening, rgba($kuning-opening,.8), $kuning-opening);
+            background: linear-gradient(to top, $kuning-opening, rgba($kuning-opening,.6) 50%, $kuning-opening);
         }
     }
     .img {

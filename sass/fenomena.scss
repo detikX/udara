@@ -1,5 +1,23 @@
 .fenomena {
     background: $kuning-opening;
+
+    .hela {
+      margin-bottom: 30vh;
+      border-radius: 16px;
+      background: linear-gradient(to top, rgba($kuning-opening,1), rgba($kuning-opening, .6), rgba($kuning-opening,.9));
+      padding: 16px;
+      @media screen and (max-width:766px) {
+        margin-bottom: 3vh;
+        padding: 8px;
+        
+      }
+    }
+
+    .no-m {
+      @media screen and (max-width:766px) {
+        margin-bottom: 0;
+      }
+    }
     
     @media screen and (max-width:766px) {
       padding-bottom: 32px; 
@@ -7,6 +25,70 @@
     // p {
     //   backdrop-filter: blur(5px);
     // }
+    .stick {
+      position: sticky;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      min-height: 100vh;
+      // border-bottom: 3px solid #945843;
+      @media screen and (max-width:766px) {
+        min-height: 50vh;
+      }
+      @keyframes awanx {
+        0%, 100% {
+          left: 15%;
+          opacity: .8;
+        }
+        50% {
+          left: 20%;
+          opacity: .8;
+        }
+      }
+      @keyframes awanz {
+        0%, 100% {
+          right: 5%;
+          opacity: .8;
+        }
+        50% {
+          right: 10%;
+          opacity: .8;
+        }
+      }
+      .awan-b-1 {
+        animation: awanx 4s linear infinite;
+        height: auto;
+        position: absolute;
+        top: 25%;
+        opacity: .8;
+        left: 15%;
+        width: 120px;
+        @media screen and (max-width:766px) {
+          width: 90px;
+          
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      .awan-b-2 {
+        width: 90px;
+        animation: awanz 4s linear infinite;
+        height: auto;
+        position: absolute;
+        top: 25%;
+        opacity: .8;
+        right: 5%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
     .bg {
         position: absolute;
         right: 0;
@@ -14,8 +96,8 @@
         width: 30%;
         height: auto;
         @media screen and (max-width:766px) {
-            bottom: 60px;
-            width: 50%;
+            bottom: -1px;
+            width: 80%;
         }
         img {
             width: 100%;
