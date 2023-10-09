@@ -1,4 +1,13 @@
-AOS.init();
+$(document).ready(function () {
+
+    AOS.init();
+})
+
+$(window).on("resize", function () {
+    AOS.refresh()
+})
+$(".container p, .container img, .container blockquote, .container h1, .container h3, .container span, .body_text p").attr({ "data-aos": "fade-in", "data-aos-delay": "300", "data-aos-duration": "300", "data-aos-offset": "10", "data-aos-easing": "linear" })
+
 
 $('span').addClass('shine');
 $('.cloud').addClass('fly');
@@ -82,3 +91,5 @@ $('.maps iframe').hide()
 setTimeout(() => {
     $('.maps iframe').show()
 }, 2500);
+
+
