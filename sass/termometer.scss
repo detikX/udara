@@ -164,6 +164,7 @@ $TM-tooltipArrowHeight: 2.2; // Higher numbers produce smaller height
 		display: flex;
 		@media screen and (max-width:766px) {
 			opacity: 0;
+			pointer-events: none;
 		}
 		input[type="text"] {
 			width: 2.2em;
