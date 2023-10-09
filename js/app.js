@@ -58,13 +58,13 @@ setTimeout(setTemperature, 1000);
 var count = 24;
 var counterIncrement = +1;
 var counter = setInterval(timer, 1000);
-
+$("#temperature").attr('data-value', 0)
 function timer() {
     count = count + counterIncrement;
     if (count == 24 || count == 28) {
         counterIncrement = -counterIncrement;
     }
-    console.log(count);
+    // console.log(count);
     $("#temperature").attr('data-value', count)
     $("#data-ter").val(count)
     setTemperature()
@@ -76,4 +76,4 @@ function timer() {
 setTimeout(() => {
     clearInterval(counter)
 
-}, 8000);
+}, 10000);
