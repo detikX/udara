@@ -5,11 +5,23 @@
         font-weight: bold;
         font-size: 2.3rem;
     }
-
+    @keyframes peta {
+        0%, 100% {
+          top: 0;
+          
+        }
+        50% {
+          top: 10px;
+          
+        }
+      }
     iframe,.img {
+        animation: peta 2.5s linear infinite;
         width: 960px;
         height: 470px;
-        margin: 0 auto;
+        position: relative;
+        top: 0;
+        margin: 0 auto ;
         text-align: center;
         // border: 6px solid $oren;
         // border-radius: 16px;
@@ -22,6 +34,52 @@
         @media screen and (max-width:766px) {
             width: 100%;
             height: 300px;
+        }
+    }
+    .name {
+        // text-align: left;
+        font-size: .75rem;
+        color: #513600;
+        font-weight: 700;
+        // margin-bottom: 32px;
+    }
+
+    .jud {
+        font-weight: 700;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 8px;
+        font-size: .8rem;
+    }
+    .kotak {
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+        // margin-left: 8px;
+        display: inline-block;
+        &.full {
+            background: #301511;
+        }
+        &.full-half {
+            background: #8e2c1d;
+        }
+        &.full-first {
+            background: #dd6526;
+        }
+        &.men {
+            background: #eda920;
+        }
+        &.men2 {
+            background: #eae114;
+        }
+        &.men3 {
+            background: #dde469;
+        }
+        &.t1 {
+            background: #8fcc8a;
+        }
+        &.t2 {
+            background: #349245;
         }
     }
 }
