@@ -104,6 +104,8 @@
         animation: peta 2.5s linear infinite;
         @media screen and (max-width:766px) {
             width: 100%;
+            height: fit-content;
+            margin: 0 auto 16px;
         }
         img {
             width: 100%;
