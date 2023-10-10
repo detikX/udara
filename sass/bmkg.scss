@@ -102,6 +102,9 @@
         margin: 0 auto ;
         text-align: center;
         animation: peta 2.5s linear infinite;
+        @media screen and (max-width:766px) {
+            width: 100%;
+        }
         img {
             width: 100%;
             height: 100%;
