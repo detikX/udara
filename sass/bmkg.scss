@@ -1,8 +1,8 @@
 .bmkg {
-    // background: $kuning-opening;
-    background: url(../img/plus.png);
-    background-size: 20px 20px;
-    background-repeat: repeat;
+    background: $kuning-opening;
+    // background: url(../img/plus.png);
+    // background-size: 20px 20px;
+    // background-repeat: repeat;
     // .kot {
     //     position: absolute;
     //     inset: 0;
@@ -20,6 +20,94 @@
     //     }
     // }
 
+
+    @keyframes peta {
+        0%, 100% {
+          top: 0;
+          
+        }
+        50% {
+          top: 10px;
+          
+        }
+      }
+
+      .topx {
+        position: relative;
+        z-index: 15;
+      }
+      .kotak {
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+        // margin-left: 8px;
+        display: inline-block;
+        &.full {
+            background: #301511;
+        }
+        &.full-half {
+            background: #8e2c1d;
+        }
+        &.full-first {
+            background: #dd6526;
+        }
+        &.men {
+            background: #eda920;
+        }
+        &.men2 {
+            background: #eae114;
+        }
+        &.men3 {
+            background: #dde469;
+        }
+        &.t1 {
+            background: #8fcc8a;
+        }
+        &.t2 {
+            background: #349245;
+        }
+    }
+    .name {
+        // text-align: left;
+        font-size: .75rem;
+        color: #513600;
+        font-weight: 700;
+        // margin-bottom: 32px;
+    }
+
+    .jud {
+        // font-weight: 700;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 8px;
+        font-size: .8rem;
+        @media screen and (max-width:766px) {
+            width: 60px;
+            font-size: .65rem;
+        }
+    }
+    .haha {
+        font-weight: 700;
+        margin-bottom: 4px;
+        font-size: .8rem;
+    }
+    .col-md-3.col-6 {
+        margin-bottom: 8px;
+    }
+    .imk {
+        width: 960px;
+        height: 470px;
+        position: relative;
+        top: 0;
+        margin: 0 auto ;
+        text-align: center;
+        animation: peta 2.5s linear infinite;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
     &::before {
         content: "";
         background: linear-gradient(to top, #E5BC4D, rgba(229, 188, 78,.95),#e5bc4e);
