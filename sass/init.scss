@@ -133,6 +133,10 @@ section {
     }
 }
 
+#nav.no_index, #share {
+    z-index: 21;
+}
+
 .intros {
     // width: 70%;
     // position: absolute;

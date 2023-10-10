@@ -6,9 +6,9 @@ $(document).ready(function () {
 $(window).on("resize", function () {
     AOS.refresh()
 })
-$(".container p, .container blockquote, .container h1, .container h3, .container span, .body_text p").attr({ "data-aos": "fade-up", "data-aos-delay": "300", "data-aos-duration": "300", "data-aos-offset": "10", "data-aos-easing": "linear" })
+$("#udara .container p, .container blockquote, .container h1, .container h3, .container span, .body_text p").attr({ "data-aos": "fade-up", "data-aos-delay": "300", "data-aos-duration": "300", "data-aos-offset": "10", "data-aos-easing": "linear" })
 
-$(".container img").attr({ "data-aos": "zoom-in", "data-aos-delay": "300", "data-aos-duration": "300", "data-aos-offset": "10", "data-aos-easing": "linear" })
+$("#udara .container img").attr({ "data-aos": "zoom-in", "data-aos-delay": "300", "data-aos-duration": "300", "data-aos-offset": "10", "data-aos-easing": "linear" })
 
 
 
