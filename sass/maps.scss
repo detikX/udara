@@ -15,8 +15,11 @@
           
         }
       }
+    .img {
+
+        animation: peta 2.5s linear infinite;
+    }
     iframe,.img {
-        // animation: peta 2.5s linear infinite;
         width: 960px;
         height: 470px;
         position: relative;
