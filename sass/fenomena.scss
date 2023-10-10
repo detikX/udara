@@ -1,10 +1,16 @@
 .fenomena {
     background: $kuning-opening;
-
+    .wrap-detikx {
+      top: -15vh;
+      @media screen and (max-width:766px) {
+        top: 0;
+      }
+    }
     .hela {
       margin-bottom: 30vh;
       border-radius: 16px;
-      background: linear-gradient(to top, rgba($kuning-opening,1), rgba($kuning-opening, .6), rgba($kuning-opening,.9));
+      // background: linear-gradient(to top, rgba($kuning-opening,1), rgba($kuning-opening, .6), rgba($kuning-opening,.9));
+      background: linear-gradient(to top, rgba(#fcfcfc,1), rgba(#fafafa, .6), rgba(#fcfcfc,.9));
       padding: 16px;
       @media screen and (max-width:766px) {
         margin-bottom: 3vh;

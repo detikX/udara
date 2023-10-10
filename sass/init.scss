@@ -153,10 +153,11 @@ section {
 }
 
 #nav {
-    background: rgba(#000, .8) !important;
+    background: rgb(105 84 29 / 80%) !important;
     backdrop-filter: blur(11px);
     @media screen and (max-width: 766px) {
-        // backdrop-filter: initial;
+        backdrop-filter: initial;
+        // background: rgba(#000, .8) !important;
     }
 }
 
@@ -201,7 +202,8 @@ section {
                 /* transform: translateY(-50%); */
                 width: 100%;
                 background: linear-gradient(to top, black, transparent);
-                padding: 8px;
+                padding: 8px 16px;
+                border-radius: 24px;
                 bottom: 0;
                 transform: initial;
                 h2 {
